@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "346FCCF472707A8B4A3429DD657B666F8E75213D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8A684E981FC44126AEF3CEC6CD97D56F2833649A" : 0,
+    "346FCCF472707A8B4A3429DD657B666F8E75213D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C61BC60F-D400-4595-AFA8-71F8CD4A7DB6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8A684E981FC44126AEF3CEC6CD97D56F2833649A" : "",
+    "346FCCF472707A8B4A3429DD657B666F8E75213D" : "CTEC.CardGame\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CTEC.CardGame",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CTEC.CardGame.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JohnathanFlint\/CTEC.CardGame.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "346FCCF472707A8B4A3429DD657B666F8E75213D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JohnathanFlint\/String-Playgroung.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8A684E981FC44126AEF3CEC6CD97D56F2833649A"
+    }
+  ]
+}
