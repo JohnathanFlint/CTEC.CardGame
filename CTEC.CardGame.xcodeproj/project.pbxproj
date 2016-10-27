@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F9D39661DC2519E00F3C173 /* CardGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D39651DC2519E00F3C173 /* CardGameController.swift */; };
 		1FF007321DBFAD68006941BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF007311DBFAD68006941BB /* AppDelegate.swift */; };
-		1FF007341DBFAD68006941BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF007331DBFAD68006941BB /* ViewController.swift */; };
 		1FF007371DBFAD68006941BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF007351DBFAD68006941BB /* Main.storyboard */; };
 		1FF007391DBFAD68006941BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FF007381DBFAD68006941BB /* Assets.xcassets */; };
 		1FF0073C1DBFAD68006941BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0073A1DBFAD68006941BB /* LaunchScreen.storyboard */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F9D39651DC2519E00F3C173 /* CardGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardGameController.swift; path = CTEC.CardGame/Controller/CardGameController.swift; sourceTree = "<group>"; };
 		1FF0072E1DBFAD68006941BB /* CTEC.CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTEC.CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF007311DBFAD68006941BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FF007331DBFAD68006941BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FF007361DBFAD68006941BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FF007381DBFAD68006941BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FF0073B1DBFAD68006941BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -39,6 +39,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F9D39671DC251AF00F3C173 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F9D39651DC2519E00F3C173 /* CardGameController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1F9D39681DC2522900F3C173 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FF007351DBFAD68006941BB /* Main.storyboard */,
+				1FF007381DBFAD68006941BB /* Assets.xcassets */,
+				1FF0073A1DBFAD68006941BB /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		1FF007251DBFAD68006941BB = {
 			isa = PBXGroup;
 			children = (
@@ -60,10 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF007311DBFAD68006941BB /* AppDelegate.swift */,
-				1FF007331DBFAD68006941BB /* ViewController.swift */,
-				1FF007351DBFAD68006941BB /* Main.storyboard */,
-				1FF007381DBFAD68006941BB /* Assets.xcassets */,
-				1FF0073A1DBFAD68006941BB /* LaunchScreen.storyboard */,
+				1F9D39681DC2522900F3C173 /* View */,
 				1FF0073D1DBFAD68006941BB /* Info.plist */,
 			);
 			path = CTEC.CardGame;
@@ -74,6 +89,7 @@
 			children = (
 				1FF007451DBFAEA9006941BB /* PlayingCard.swift */,
 				1FF007431DBFAE81006941BB /* Card.swift */,
+				1F9D39671DC251AF00F3C173 /* Controller */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -149,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FF007341DBFAD68006941BB /* ViewController.swift in Sources */,
+				1F9D39661DC2519E00F3C173 /* CardGameController.swift in Sources */,
 				1FF007441DBFAE81006941BB /* Card.swift in Sources */,
 				1FF007461DBFAEA9006941BB /* PlayingCard.swift in Sources */,
 				1FF007321DBFAD68006941BB /* AppDelegate.swift in Sources */,
@@ -302,6 +318,7 @@
 				1FF007421DBFAD68006941BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
