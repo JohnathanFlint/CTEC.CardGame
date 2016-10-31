@@ -10,8 +10,8 @@ import UIKit
 
 class PlayingCard : Card
 {
-    private var rank : Int
-    {
+    internal var rank : Int
+        {
         get
         {
             return self.rank
@@ -22,8 +22,8 @@ class PlayingCard : Card
         }
     }
     
-    private var suit : String
-    {
+    internal var suit : String
+        {
         get
         {
             return self.suit
@@ -34,8 +34,8 @@ class PlayingCard : Card
         }
     }
     
-    private var color : UIColor
-    {
+    internal var color : UIColor
+        {
         get
         {
             return self.color
@@ -46,8 +46,8 @@ class PlayingCard : Card
         }
     }
     
-    private var frontImage : UIImage
-    {
+    internal var frontImage : UIImage
+        {
         get
         {
             return self.frontImage
@@ -58,9 +58,9 @@ class PlayingCard : Card
         }
     }
     
-    private var backImage : UIImage
-    {
-       get
+    internal var backImage : UIImage
+        {
+        get
         {
             return self.backImage
         }
