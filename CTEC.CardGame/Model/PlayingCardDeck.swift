@@ -11,5 +11,18 @@ import Foundation
 class PlayingCardDeck : Deck
     
 {
+    override init()
+    {
+        
+    }
     
+    func huffleDeck() -> Void
+    {
+        
+    }
+    
+    func orderDeck() -> Void
+    {
+        
+    }
 }
