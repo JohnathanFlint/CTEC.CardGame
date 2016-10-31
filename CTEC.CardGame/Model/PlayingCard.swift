@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PLayingCard : Card
+class PlayingCard : Card
 {
     private var rank : Int
     {
@@ -73,12 +73,21 @@ class PLayingCard : Card
     override init()
     {
         super.init()
-        frontImage = UIImage()
-        backImage = UIImage()
-        color = UIColor()
+        //frontImage = UIImage(cardfront)
+        color = UIColor.redColor()
         rank = 0
         suit = ""
         
+    }
+    
+    init(withRank: Int, ofSuit: String)
+    {
+        super.init()
+        //frontImage = UIImage(cardfront)
+        color = UIColor.redColor()
+        
+        rank = withRank
+        suit = ofSuit
     }
     
     override func toString() -> String

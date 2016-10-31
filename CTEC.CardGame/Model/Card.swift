@@ -37,7 +37,7 @@ class Card
         init()
     {
         isFaceUp = false
-        backImage = UIImage()
+        backImage = UIImage(named: "cardvbck")
     }
     
     func toString() -> String
