@@ -6,9 +6,10 @@
 //  Copyright © 2016 CTEC. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class Deck : PlayingCard
+class Deck
+    
 {
     
 }
