@@ -11,33 +11,13 @@ import UIKit
 class Card
 {
     private var isFaceUp : Bool
-    {
-        get
-        {
-            return self.isFaceUp
-        }
-        set(isFaceUp)
-        {
-            self.isFaceUp = isFaceUp
-        }
-    }
     
     private var backImage : UIImage
-    {
-        get
-            {
-                return self.backImage
-            }
-        set(backImage)
-            {
-                self.backImage = backImage
-            }
-    }
-   
-        init()
+    
+    init()
     {
         isFaceUp = false
-        backImage = UIImage(named: "cardvbck")
+        backImage = UIImage(named: "cardback")!
     }
     
     func toString() -> String
