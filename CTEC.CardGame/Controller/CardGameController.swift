@@ -10,6 +10,13 @@ import UIKit
 
 class CardGameController : UIViewController
 {
+    @IBOutlet weak var cardButton: UIButton!
+    @IBOutlet weak var cardLabel: UILabel!
+    
+    private lazy var currentDeck = PlayingCardDeck()
+    
+    private lazy var clickCount = Int()
+    
     override func viewDidLoad()
     {
         let tempCard = Card()
@@ -17,4 +24,12 @@ class CardGameController : UIViewController
         let otherTemp = PlayingCard()
         print(otherTemp.toString())
     }
+    
+    @IBAction func flipCard(sender: UIButton)
+    {
+        clickCount += 1
+        let words = "The card has been clicked \(clickCount) times"
+        cardLabel.text = words
+    }
+    
 }
