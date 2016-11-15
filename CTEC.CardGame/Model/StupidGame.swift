@@ -18,18 +18,22 @@ class StupidGame
     internal var playingCard2 : PlayingCard
     internal var hasEnded : Bool
     internal var buttonClicked : Bool
+    internal var hand : [PlayingCard]
+    internal var handSize : Int
     
     
     //inits
     init()
     {
         deck = PlayingCardDeck()
+        hand = [PlayingCard]()
         wasteBasketofFire = [PlayingCard]()
         wasteBasketofVictory = [PlayingCard]()
         playingCard1 = PlayingCard()
         playingCard2 = PlayingCard()
         hasEnded = Bool()
         buttonClicked = Bool()
+        handSize = Int()
     }
  
     
@@ -37,22 +41,18 @@ class StupidGame
     func startGame() -> Void
     {
         deck.shuffleDeck()
-        playingCard1 = ((deck.drawCard() as? PlayingCard)!)
-        playingCard2 = ((deck.drawCard() as? PlayingCard)!)
         
         while(!hasEnded)
         {
             if(buttonClicked)
             {
                 buttonClicked = false
-                
-                let removedCard1 = self.playingCard1
-                let removedCard2 = self.playingCard2
-                
-                wasteBasketofFire.append(removedCard1, removedCard2)
-                
-                
-                
+               
+                for(handSize = 0; handSize < 2;)
+                {
+                    deck.drawCard()
+                    hand.addAtIndex(0)
+                }
                 
             }
         }
