@@ -16,6 +16,7 @@ class CardGameController : UIViewController
     private lazy var currentDeck = PlayingCardDeck()
     
     private lazy var clickCount = Int()
+    private lazy var game : StupidGame = StupidGame()
     
     override func viewDidLoad()
     {
@@ -23,6 +24,12 @@ class CardGameController : UIViewController
         print(tempCard.toString())
         let otherTemp = PlayingCard()
         print(otherTemp.toString())
+        
+        game.startGame()
+        game.checkMatch()
+        game.checkVictory()
+        game.checkDefeat()
+        
     }
     
     @IBAction func flipCard(sender: UIButton)
@@ -39,6 +46,20 @@ class CardGameController : UIViewController
         {
             cardLabel.text = "The deck was exhausted - reinitializing"
             self.currentDeck = PlayingCardDeck()
+        }
+    }
+    
+    func gameResults() -> Void
+    {
+        let hasWon = game.hasWon
+        if(hasWon == true)
+        {
+            cardLabel.text = "You Won!"
+        }
+        let hasLost = game.hasLost
+        if(hasLost == true)
+        {
+            cardLabel.text = "You Lost! :-("
         }
     }
     

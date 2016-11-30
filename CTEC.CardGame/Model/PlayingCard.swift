@@ -63,7 +63,7 @@ class PlayingCard : Card
         return data
     }
     
-    //The mdoifier 'class' in front of the func means that this method is visible
+    //The modifier 'class' in front of the func means that this method is visible
     //Without creatin an instance of the class in question
     //This is a class method not an instance method
     class func validRanks() -> [String]
