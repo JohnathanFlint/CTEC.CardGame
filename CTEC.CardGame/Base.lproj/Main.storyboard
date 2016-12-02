@@ -61,6 +61,7 @@
                     <connections>
                         <outlet property="CardLabel" destination="Ce6-7y-KsE" id="HWc-Si-UKN"/>
                         <outlet property="cardButton" destination="02t-UF-5co" id="smR-U1-lgw"/>
+                        <outlet property="cardButton2" destination="Igc-1S-IdR" id="MPN-45-Clq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

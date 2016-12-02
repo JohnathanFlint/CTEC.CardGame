@@ -21,7 +21,8 @@ class StupidGame
     internal var buttonClicked : Bool
     internal var hand : [PlayingCard]
     internal var handSize : Int
-    internal var hasMatch : Bool
+   
+    private lazy var controller : CardGameController = CardGameController()
     
     
     //inits
@@ -36,7 +37,6 @@ class StupidGame
         hasWon = Bool()
         buttonClicked = Bool()
         handSize = Int()
-        hasMatch = Bool()
         hasLost = Bool()
     }
  
@@ -70,7 +70,7 @@ class StupidGame
     func checkMatch() -> Bool
     {
        let hasMatch : Bool
-        if( (hand[0].rank == hand[1].rank) && (hand[0].suit == "♥️") && ( hand[1].suit == "♦️"))
+        if((hand[0].rank == hand[1].rank) && (hand[0].suit == "♥️") && ( hand[1].suit == "♦️"))
         {
             hasMatch = true
         }
@@ -97,7 +97,7 @@ class StupidGame
     func checkVictory() -> Bool
     {
         let hasWon : Bool
-        if(hasMatch == true)
+        if(checkMatch() == true)
         {
             hasWon = true
         }
@@ -111,7 +111,7 @@ class StupidGame
     func checkDefeat() -> Bool
     {
         let hasLost : Bool
-        if((hasMatch == false) && (deck.cards.count == 0))
+        if((checkMatch() == false) && (deck.cards.count == 0))
         {
             hasLost = true
         }
@@ -124,7 +124,7 @@ class StupidGame
     
     func playGame() -> Void
     {
-        if((hasWon != true) && (hasLost != true))
+        if((checkVictory() != true) && (checkDefeat() != true))
         {
             hand.removeAtIndex(0)
             hand.removeAtIndex(0)
@@ -134,6 +134,7 @@ class StupidGame
             checkMatch()
             checkVictory()
             checkDefeat()
+           // controller.gameResults()
         }
         else
         {

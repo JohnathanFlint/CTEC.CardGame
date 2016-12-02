@@ -13,6 +13,7 @@ class CardGameController : UIViewController
     @IBOutlet weak var cardButton: UIButton!
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var cardButton2: UIButton!
     
     private lazy var currentDeck = PlayingCardDeck()
     
@@ -37,6 +38,11 @@ class CardGameController : UIViewController
     @IBAction func playButton(sender: UIButton)
     {
         game.playGame()
+        cardButton.setTitle(game.hand[0].getCardData(), forState: UIControlState.Normal)
+        cardButton2.setTitle(game.hand[1].getCardData(), forState: UIControlState.Normal)
+        
+        gameResults()
+        
     }
     
     @IBAction func flipCard(sender: UIButton)
@@ -58,15 +64,19 @@ class CardGameController : UIViewController
     
     func gameResults() -> Void
     {
-        let hasWon = game.hasWon
-        if(hasWon == true)
+        //let hasWon = game.checkVictory()
+        if(game.checkVictory() == true)
         {
             cardLabel.text = "You Won!"
         }
-        let hasLost = game.hasLost
-        if(hasLost == true)
+        //let hasLost = game.checkDefeat()
+        else if(game.checkDefeat() == true)
         {
-            cardLabel.text = "You Lost! :-("
+            cardLabel.text = "You Lost! :`("
+        }
+        else
+        {
+            cardLabel.text = "Never give up never give in!"
         }
     }
     
