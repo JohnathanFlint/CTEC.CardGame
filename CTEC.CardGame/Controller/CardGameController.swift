@@ -12,6 +12,7 @@ class CardGameController : UIViewController
 {
     @IBOutlet weak var cardButton: UIButton!
     @IBOutlet weak var cardLabel: UILabel!
+    @IBOutlet weak var playButton: UIButton!
     
     private lazy var currentDeck = PlayingCardDeck()
     
@@ -30,6 +31,12 @@ class CardGameController : UIViewController
         game.checkVictory()
         game.checkDefeat()
         
+    }
+    
+    
+    @IBAction func playButton(sender: UIButton)
+    {
+        game.playGame()
     }
     
     @IBAction func flipCard(sender: UIButton)

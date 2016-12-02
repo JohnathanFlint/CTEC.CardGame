@@ -47,6 +47,10 @@ class StupidGame
         deck.shuffleDeck()
         hand.append((deck.drawCard() as? PlayingCard)!)
         hand.append((deck.drawCard() as? PlayingCard)!)
+        
+        checkMatch()
+        checkVictory()
+        checkDefeat()
        /* while(!hasEnded)
         {
             if(buttonClicked)
@@ -107,7 +111,7 @@ class StupidGame
     func checkDefeat() -> Bool
     {
         let hasLost : Bool
-        if((hasMatch == false) && (deck.count == 0))
+        if((hasMatch == false) && (deck.cards.count == 0))
         {
             hasLost = true
         }
