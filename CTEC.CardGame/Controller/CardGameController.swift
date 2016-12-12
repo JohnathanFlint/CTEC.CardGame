@@ -17,13 +17,10 @@ class CardGameController : UIViewController
     
     fileprivate lazy var currentDeck = PlayingCardDeck()
     
-<<<<<<< HEAD
-    fileprivate lazy var clickCount = Int()
-=======
+
     private lazy var clickCount = Int()
     private lazy var game : StupidGame = StupidGame()
->>>>>>> origin/master
-    
+
     override func viewDidLoad()
     {
         let tempCard = Card()
@@ -39,15 +36,15 @@ class CardGameController : UIViewController
     }
     
     
-    @IBAction func playButton(sender: UIButton)
+    @IBAction func playButton(_ sender: UIButton)
     {
         game.playGame()
-        cardButton.setTitle(game.hand[0].getCardData(), forState: UIControlState.Normal)
-        cardButton2.setTitle(game.hand[1].getCardData(), forState: UIControlState.Normal)
+        cardButton.setTitle(game.hand[0].getCardData(), for: UIControlState.normal)
+        cardButton2.setTitle(game.hand[1].getCardData(), for: UIControlState.normal)
         
         gameResults()
-        
     }
+  
     
     @IBAction func flipCard(_ sender: UIButton)
     {

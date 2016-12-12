@@ -10,12 +10,9 @@ import UIKit
 
 class Card
 {
-    fileprivate var isFaceUp : Bool
+    private var isFaceUp : Bool
     
-<<<<<<< HEAD
-    fileprivate var backImage : UIImage
-=======
->>>>>>> origin/master
+
     
     init()
     {
