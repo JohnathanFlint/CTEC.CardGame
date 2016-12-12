@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Card Game Controller-->
@@ -17,38 +18,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02t-UF-5co">
-                                <rect key="frame" x="207" y="141" width="187" height="317"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="02t-UF-5co">
+                                <rect key="frame" x="20" y="141" width="187" height="317"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Button" backgroundImage="cardback"/>
                                 <connections>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UP1-bz-m3e"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ce6-7y-KsE">
-                                <rect key="frame" x="207" y="100" width="187" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ce6-7y-KsE">
+                                <rect key="frame" x="207" y="28" width="187" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YE0-R1-xyu">
+                                <rect key="frame" x="392" y="141" width="188" height="317"/>
+                                <state key="normal" title="Button" backgroundImage="cardback"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igc-1S-IdR">
+                                <rect key="frame" x="392" y="141" width="188" height="317"/>
+                                <state key="normal" title="Button" backgroundImage="cardback"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvs-bp-TCY">
+                                <rect key="frame" x="257" y="286" width="87" height="30"/>
+                                <state key="normal" title="Click To Play"/>
+                                <connections>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehy-Tl-NLJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="02t-UF-5co" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="M0W-JH-Dzz"/>
-                            <constraint firstItem="Ce6-7y-KsE" firstAttribute="leading" secondItem="02t-UF-5co" secondAttribute="leading" id="QBM-ew-H74"/>
-                            <constraint firstItem="02t-UF-5co" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WQc-HC-Tsj"/>
-                            <constraint firstItem="Ce6-7y-KsE" firstAttribute="width" secondItem="02t-UF-5co" secondAttribute="width" id="aGa-wa-SZ0"/>
-                            <constraint firstItem="02t-UF-5co" firstAttribute="top" secondItem="Ce6-7y-KsE" secondAttribute="bottom" constant="20" id="d1K-Cm-xef"/>
+                            <constraint firstItem="02t-UF-5co" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="121" id="6hI-zy-GsG"/>
+                            <constraint firstItem="Nvs-bp-TCY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="266" id="Bjl-Ra-6kT"/>
+                            <constraint firstItem="Igc-1S-IdR" firstAttribute="width" secondItem="02t-UF-5co" secondAttribute="width" id="LLF-eQ-fgb"/>
+                            <constraint firstItem="Ce6-7y-KsE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Zkf-Ke-gZ2"/>
+                            <constraint firstItem="Igc-1S-IdR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="121" id="dQy-lb-Gbk"/>
+                            <constraint firstItem="Ce6-7y-KsE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="187" id="jsI-0i-6Gd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="CardLabel" destination="Ce6-7y-KsE" id="HWc-Si-UKN"/>
                         <outlet property="cardButton" destination="02t-UF-5co" id="smR-U1-lgw"/>
+                        <outlet property="cardButton2" destination="Igc-1S-IdR" id="MPN-45-Clq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772.5" y="372.75"/>
+            <point key="canvasLocation" x="772" y="372"/>
         </scene>
     </scenes>
     <resources>

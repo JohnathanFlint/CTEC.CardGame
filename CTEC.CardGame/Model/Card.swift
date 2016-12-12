@@ -12,12 +12,14 @@ class Card
 {
     fileprivate var isFaceUp : Bool
     
+<<<<<<< HEAD
     fileprivate var backImage : UIImage
+=======
+>>>>>>> origin/master
     
     init()
     {
         isFaceUp = false
-        backImage = UIImage(named: "cardback")!
     }
     
     func toString() -> String
@@ -25,14 +27,7 @@ class Card
         let description = "The card is \(isFaceUp)"
         return description
     }
-    
-    func getBackImage() -> UIImage
-    {
-        return backImage
-    }
-    
   
-    
     func isUp() -> Bool
     {
         return isFaceUp

@@ -13,12 +13,15 @@ class PlayingCard : Card
     internal var rank : Int
     internal var suit : String
     internal var color : UIColor
-    internal var frontImage : UIImage
         
     override init()
     {
+<<<<<<< HEAD
         self.frontImage = UIImage(named:"cardfront")!
         self.color = UIColor.red
+=======
+        self.color = UIColor.redColor()
+>>>>>>> origin/master
         self.rank = 0
         self.suit = ""
         super.init()
@@ -26,8 +29,12 @@ class PlayingCard : Card
     
     init(withRank: Int, ofSuit: String)
     {
+<<<<<<< HEAD
         frontImage = UIImage(named: "cardfront")!
         color = UIColor.red
+=======
+        color = UIColor.redColor()
+>>>>>>> origin/master
         rank = withRank
         suit = ofSuit
         super.init()
@@ -45,7 +52,7 @@ class PlayingCard : Card
             facing = " is face down"
         }
         
-        let description = "This playing card has a face value of \(rank), a color of \(color), the back image is \(self.getBackImage), and is of \(suit) suit \(facing)"
+        let description = "This playing card has a face value of \(rank), a color of \(color) and is of \(suit) suit \(facing)"
         
         return description
     }
@@ -66,7 +73,7 @@ class PlayingCard : Card
         return data
     }
     
-    //The mdoifier 'class' in front of the func means that this method is visible
+    //The modifier 'class' in front of the func means that this method is visible
     //Without creatin an instance of the class in question
     //This is a class method not an instance method
     class func validRanks() -> [String]
