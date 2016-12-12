@@ -17,9 +17,9 @@ class PlayingCardDeck : Deck
         
         for suit in PlayingCard.validSuits()
         {
-            for var rank = 1; rank <= PlayingCard.maxRank(); rank += 1
+            for index in 1...PlayingCard.maxRank()
             {
-                let currentCard = PlayingCard(withRank: rank, ofSuit: suit)
+                let currentCard = PlayingCard(withRank: index, ofSuit: suit)
                 self.cards.append(currentCard)
             }
         }

@@ -16,7 +16,12 @@ class PlayingCard : Card
         
     override init()
     {
+<<<<<<< HEAD
+        self.frontImage = UIImage(named:"cardfront")!
+        self.color = UIColor.red
+=======
         self.color = UIColor.redColor()
+>>>>>>> origin/master
         self.rank = 0
         self.suit = ""
         super.init()
@@ -24,7 +29,12 @@ class PlayingCard : Card
     
     init(withRank: Int, ofSuit: String)
     {
+<<<<<<< HEAD
+        frontImage = UIImage(named: "cardfront")!
+        color = UIColor.red
+=======
         color = UIColor.redColor()
+>>>>>>> origin/master
         rank = withRank
         suit = ofSuit
         super.init()
@@ -52,7 +62,7 @@ class PlayingCard : Card
         return self.rank
     }
     
-    func setRank(rank : Int)
+    func setRank(_ rank : Int)
     {
         self.rank = rank
     }

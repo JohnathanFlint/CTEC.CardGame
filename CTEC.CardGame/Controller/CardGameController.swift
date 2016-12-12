@@ -15,10 +15,14 @@ class CardGameController : UIViewController
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var cardButton2: UIButton!
     
-    private lazy var currentDeck = PlayingCardDeck()
+    fileprivate lazy var currentDeck = PlayingCardDeck()
     
+<<<<<<< HEAD
+    fileprivate lazy var clickCount = Int()
+=======
     private lazy var clickCount = Int()
     private lazy var game : StupidGame = StupidGame()
+>>>>>>> origin/master
     
     override func viewDidLoad()
     {
@@ -45,7 +49,7 @@ class CardGameController : UIViewController
         
     }
     
-    @IBAction func flipCard(sender: UIButton)
+    @IBAction func flipCard(_ sender: UIButton)
     {
         clickCount += 1
         let words = "The random card button has been clicked \(clickCount) times"
@@ -53,7 +57,7 @@ class CardGameController : UIViewController
         
         if let currentCard = currentDeck.drawRandomCard() as? PlayingCard
         {
-            cardButton .setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+            cardButton .setTitle("\(currentCard.getCardData())", for: UIControlState())
         }
         else
         {
