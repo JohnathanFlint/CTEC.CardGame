@@ -52,10 +52,19 @@
                                     <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R7U-Dt-c7c"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jC5-6I-Jn0">
+                                <rect key="frame" x="258" y="346" width="84" height="30"/>
+                                <state key="normal" title="Reset Game"/>
+                                <connections>
+                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5lI-io-uGG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="jC5-6I-Jn0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="238" id="49F-nz-DYZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Igc-1S-IdR" secondAttribute="trailing" constant="424" id="Hew-5N-ntW"/>
+                            <constraint firstItem="jC5-6I-Jn0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="326" id="LAd-nj-i9M"/>
                             <constraint firstItem="Nvs-bp-TCY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="237" id="RES-0a-VUh"/>
                             <constraint firstAttribute="leadingMargin" secondItem="02t-UF-5co" secondAttribute="leading" id="WoY-fc-JX3"/>
                             <constraint firstItem="Ce6-7y-KsE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Zkf-Ke-gZ2"/>
@@ -69,6 +78,7 @@
                         <outlet property="CardLabel" destination="Ce6-7y-KsE" id="HWc-Si-UKN"/>
                         <outlet property="cardButton" destination="02t-UF-5co" id="smR-U1-lgw"/>
                         <outlet property="cardButton2" destination="Igc-1S-IdR" id="MPN-45-Clq"/>
+                        <outlet property="resetButton" destination="jC5-6I-Jn0" id="fEa-zV-prQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
