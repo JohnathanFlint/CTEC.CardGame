@@ -126,8 +126,8 @@ class StupidGame
     {
         if((checkVictory() != true) && (checkDefeat() != true))
         {
-            hand.removeAtIndex(0)
-            hand.removeAtIndex(0)
+            hand.remove(at: 0)
+            hand.remove(at: 0)
             hand.append((deck.drawCard() as? PlayingCard)!)
             hand.append((deck.drawCard() as? PlayingCard)!)
             

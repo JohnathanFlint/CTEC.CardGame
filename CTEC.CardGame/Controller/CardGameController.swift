@@ -16,13 +16,12 @@ class CardGameController : UIViewController
     @IBOutlet weak var cardButton2: UIButton!
     
     fileprivate lazy var currentDeck = PlayingCardDeck()
-    
-<<<<<<< HEAD
+
     fileprivate lazy var clickCount = Int()
-=======
-    private lazy var clickCount = Int()
+
+   
     private lazy var game : StupidGame = StupidGame()
->>>>>>> origin/master
+
     
     override func viewDidLoad()
     {
@@ -42,8 +41,8 @@ class CardGameController : UIViewController
     @IBAction func playButton(sender: UIButton)
     {
         game.playGame()
-        cardButton.setTitle(game.hand[0].getCardData(), forState: UIControlState.Normal)
-        cardButton2.setTitle(game.hand[1].getCardData(), forState: UIControlState.Normal)
+        cardButton.setTitle(game.hand[0].getCardData(), for: UIControlState.normal)
+        cardButton2.setTitle(game.hand[1].getCardData(), for: UIControlState.normal)
         
         gameResults()
         

@@ -12,14 +12,13 @@ class Card
 {
     fileprivate var isFaceUp : Bool
     
-<<<<<<< HEAD
-    fileprivate var backImage : UIImage
-=======
->>>>>>> origin/master
+fileprivate var backImage : UIImage
+
     
     init()
     {
         isFaceUp = false
+        backImage = UIImage(named:"cardback")!
     }
     
     func toString() -> String
