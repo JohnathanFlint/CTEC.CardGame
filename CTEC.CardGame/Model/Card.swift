@@ -18,7 +18,7 @@ fileprivate var backImage : UIImage
     init()
     {
         isFaceUp = false
-        backImage = UIImage(named:"cardback")!
+        self.backImage = UIImage(named:"cardback")!
     }
     
     func toString() -> String

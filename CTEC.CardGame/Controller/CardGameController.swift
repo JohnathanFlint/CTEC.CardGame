@@ -10,10 +10,11 @@ import UIKit
 
 class CardGameController : UIViewController
 {
-    @IBOutlet weak var cardButton: UIButton!
     @IBOutlet weak var cardLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var cardButton: UIButton!
     @IBOutlet weak var cardButton2: UIButton!
+    
     
     fileprivate lazy var currentDeck = PlayingCardDeck()
 
@@ -31,22 +32,19 @@ class CardGameController : UIViewController
         print(otherTemp.toString())
         
         game.startGame()
-        game.checkMatch()
-        game.checkVictory()
-        game.checkDefeat()
-        
     }
     
-    
-    @IBAction func playButton(sender: UIButton)
+    @IBAction func playButton(_ sender: UIButton)
     {
         game.playGame()
-        cardButton.setTitle(game.hand[0].getCardData(), for: UIControlState.normal)
-        cardButton2.setTitle(game.hand[1].getCardData(), for: UIControlState.normal)
-        
+        cardButton.setTitle(game.hand[0].getCardData(), for : UIControlState.normal)
+        cardButton2.setTitle(game.hand[1].getCardData(), for : UIControlState.normal)
+        print(game.hand[0].getCardData() + "this is card 0")
+          print(game.hand[1].getCardData() + "this is card 1")
+
         gameResults()
-        
     }
+  
     
     @IBAction func flipCard(_ sender: UIButton)
     {
